@@ -67,8 +67,7 @@ public class MovieTicketBookingSystem {
 
         } while (choice != 7);
     }
-
-    // Show seats
+    
     static void showSeats() {
 
         System.out.println("----- SEAT STATUS -----");
@@ -91,7 +90,6 @@ public class MovieTicketBookingSystem {
         System.out.println("B = Booked");
     }
 
-    // To Book the ticket
     static void bookTicket() {
 
         sc.nextLine();
@@ -148,8 +146,7 @@ public class MovieTicketBookingSystem {
         System.out.println("Ticket Price: Rs" + ticketPrice);
         System.out.println("Total Amount: Rs" + totalAmount);
     }
-
-    // Cancel ticket
+    
     static void cancelTicket() {
 
         System.out.print("Enter row number (1-5): ");
@@ -174,7 +171,6 @@ public class MovieTicketBookingSystem {
         }
     }
 
-    // Discount coupon
     static void applyCoupon() {
 
         System.out.print("Enter ticket amount: ");
@@ -197,8 +193,7 @@ public class MovieTicketBookingSystem {
             System.out.println("Invalid coupon.");
         }
     }
-
-    // To display Weekend pricing
+    
     static void weekendPrice() {
 
         double weekendPrice = ticketPrice + 50;
@@ -206,8 +201,7 @@ public class MovieTicketBookingSystem {
         System.out.println("\nNormal Ticket Price: Rs" + ticketPrice);
         System.out.println("Weekend Ticket Price: Rs" + weekendPrice);
     }
-
-    // To display Movie rating
+    
     static void giveRating() {
 
         System.out.print("Give movie rating (1-5):");
